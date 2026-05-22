@@ -1,13 +1,8 @@
 public class Transaction {
-
     String transactionId;
-
     User user;
-
     WasteItem wasteItem;
-
     double weight;
-
     int pointsEarned;
 
     public Transaction(
@@ -16,7 +11,6 @@ public class Transaction {
             WasteItem wasteItem,
             double weight,
             int pointsEarned){
-
         this.transactionId = transactionId;
         this.user = user;
         this.wasteItem = wasteItem;
@@ -25,15 +19,10 @@ public class Transaction {
     }
 
     public void displayTransaction(){
-
         System.out.println("Transaction ID : "+ transactionId);
-
         System.out.println("Waste Type : "+ wasteItem.wasteName);
-
         System.out.println("Weight : "+ weight + " KG");
-
         System.out.println("Points : "+ pointsEarned);
-
         System.out.println("======================");
     }
 }
